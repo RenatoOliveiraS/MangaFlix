@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/main.css">
     <title>MangaFlix</title>
+
+
+<!--MODAL CSS-->    
+
+<link rel="stylesheet" href="Style/modal.css">
+
+<!--RESPONSIVIDADE-->
+
+<link rel="stylesheet" href="Style/responsive.css">
+
 <!---OWL CSS-->
 
     <link rel="stylesheet" href="Style/owl/owl.carousel.min.css">
@@ -31,15 +41,74 @@
         <div class="capaprincipal">
                 <div class="container">
                     <h3 class="Titulo">ONE PUNCH MAN</h3>
-                    <p class="descricao">Conta o dia-a-dia de um herói normal que está infeliz por ser forte o bastante para derrotar todos os seus oponentes com apenas um soco, já que isso não lhe traz mais a sensação de adrenalina ao enfrentar um inimigo poderoso...</p>
+                    <p id="descricao" class="descricao">Conta o dia-a-dia de um herói normal que está infeliz por ser forte o bastante para derrotar todos os seus oponentes com apenas um soco, já que isso não lhe traz mais a sensação de adrenalina ao enfrentar um inimigo poderoso...</p>
                     <div class="botoes">
                         <button role ="button" class="botao">
                             <i class="fas fa-book-reader"></i>
-                         Leia Agora      
+                         Leia Agora o CAP 6      
                     </button>
-                    <button role ="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                         MAIS INFORMAÇÕES                
+                        <button id="myBtn" class="botao"> <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES </button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                        
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <span class="close">&times;</span>
+                              <H3 class="Titulo">ONE PUNCH MAN </H3>
+                              <p class="descricao">ONE & Murata, Yusuke (Arte)</p>
+                              <p class="generos">Ação, Comédia, Paródia, Sci-Fi, Sobrenatural, Super Poderes</p>
+                             </div>
+                            <div class="modal-body">
+                                <table>
+                                    <tr>
+                                      <th>CAPÍTULOS</th>
+                                      <th>DATA LANÇAMENTO</th>
+                                      <th>LIDO</th>                                      
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>01/10/2021</td> 
+                                      <td><i class="fas fa-check"></i></td>                                     
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>01/11/2021</td>
+                                      <td><i class="fas fa-check"></i></td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>01/11/2021</td>
+                                        <td><i class="fas fa-check"></i></td>                                      
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>01/11/2021</td>
+                                        <td><i class="fas fa-check"></i></td>                                      
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>01/11/2021</td>
+                                        <td><i class="fas fa-check"></i></td>                                      
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>01/11/2021</td>
+                                        <td><i class="fas fa-book-reader"></i></td>                                      
+                                      </tr>
+                                      <tr>
+                                        <td>7</td>
+                                        <td>01/11/2021</td>
+                                        <td><i class="fas fa-book-reader"></i></td>                                      
+                                      </tr>
+                                  </table>
+                            </div>
+                           </div>
+                        
+                        </div>
+                                      
                     </button>
                 </div>
             </div>                    
@@ -107,10 +176,40 @@
 
     <!--FONTE AWESOME-->
     <script src="https://kit.fontawesome.com/ae70675fac.js" crossorigin="anonymous"></script>
+    
     <!-- OWL JS-->
     <script src="JS/owl/jquery.min.js"></script>
     <script src="JS/owl/owl.carousel.min.js"></script>
     <script src="JS/owl/setup.js"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    
 </body>
 </html>
 

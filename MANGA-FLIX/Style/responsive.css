@@ -1,0 +1,21 @@
+@media screen and (max-width: 550px) {
+    header .container{
+        display:flex;
+        flex-direction: column;
+        margin:auto;
+    }
+    
+    .botao{
+        
+        margin-right: 5px;
+    }
+
+   #descricao {
+        display: none;
+    }
+    .capaprincipal .Titulo{
+        margin-bottom: 5%;
+    }
+   
+    
+}
