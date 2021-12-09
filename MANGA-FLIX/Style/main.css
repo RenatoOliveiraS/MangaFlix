@@ -62,6 +62,9 @@ header nav a:hover{
 
 }
 
+.generos{
+    font-size: 15px;
+}
 
 .capaprincipal .descricao{
     margin-top: 10px;
@@ -127,3 +130,5 @@ button i {
     margin-bottom: 8px;
 }
  
+
+
